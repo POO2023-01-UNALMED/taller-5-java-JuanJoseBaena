@@ -2,7 +2,7 @@ package zooAniamales;
 
 import java.util.ArrayList;
 
-public class Anfibio extends Animal{
+public class Anfibio extends Animal {
 	private static ArrayList<Anfibio> lista = new Arraylist<Anfibio>();
 	public static int ranas;
 	public static int salamandras;
