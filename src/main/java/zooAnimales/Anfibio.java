@@ -18,7 +18,7 @@ public class Anfibio extends Animal{
 	
 	
 	public Anfibio() {
-		this("",0,"",""."",false);
+		this("",0,"","","",false);
 	}
 	
 	
