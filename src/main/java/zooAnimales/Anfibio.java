@@ -18,7 +18,7 @@ public class Anfibio extends Animal{
 	
 	
 	public Anfibio() {
-		this("",0."",""."",false);
+		this("",0,"",""."",false);
 	}
 	
 	
@@ -38,7 +38,7 @@ public class Anfibio extends Animal{
 	}
 	public static Anfibio crearSalamandra(String nombre, int edad, String genero) {
 		salamandra++;
-		return new Anfibio(nombre, edad, "selva" genero, "negro y amarillo", false);
+		return new Anfibio(nombre, edad, "selva", genero, "negro y amarillo", false);
 	}
 	
 	
