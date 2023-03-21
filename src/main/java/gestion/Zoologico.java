@@ -41,7 +41,7 @@ public class Zoologico {
 	}
 	
 	public String getUbicacion() {
-		return Ubicacion;
+		return ubicacion;
 	}
 	
 	public void setUbicacion(String ubicacion) {

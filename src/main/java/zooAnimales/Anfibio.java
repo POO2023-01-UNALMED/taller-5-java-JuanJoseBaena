@@ -43,7 +43,7 @@ public class Anfibio extends Animal{
 	
 	
 	public ArrayList<Anfibio>getLista(){
-		return Lista;
+		return lista;
 	}
 	public void setLista(ArrayList<Anfibio> lista) {
 		Anfibio.lista = lista;
