@@ -12,12 +12,18 @@ public class Zoologico {
 		this.nombre = nombre;
 		this.ubicacion = ubicacion;
 	}
+	
+	
 	public Zoologico () {
 		this(null, null);
 	}
+	
+	
 	public void agregarZonas(Zona zona) {
 		this.zonas.add(zona);
 	}
+	
+	
 	public int cantidadTotalAnimales() {
 		int contador = 0;
 		for (int i = 0; i<zonas.size(); i++) {
@@ -26,21 +32,27 @@ public class Zoologico {
 		return contador;
 	}
 	
+	
 	public String getNombre() {
 		return nombre;
 	}
+	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+	
 	public String getUbicacion() {
 		return Ubicacion;
 	}
+	
 	public void setUbicacion(String ubicacion) {
 		this.ubicacion = ubicacion;
 	}
+	
 	public ArrayList<Zona> getZona(){
 		return zonas;
 	}
+	
 	public void setZona(ArrayList<Zona> zonas) {
 		this.zonas = zonas;
 	}
