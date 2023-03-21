@@ -54,7 +54,7 @@ public class Ave extends Animal{
 	public String getColorPlumas() {
 		return colorPlumas;
 	}
-	public void setColorPlumas(Sring colorPlumas) {
+	public void setColorPlumas(String colorPlumas) {
 		this.colorPlumas = colorPlumas;
 	}
 }
