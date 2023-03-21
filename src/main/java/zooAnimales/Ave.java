@@ -46,9 +46,6 @@ public class Ave extends Animal{
 	public void setLista(ArrayList<Ave> lista) {
 		Ave.lista = lista;
 	}
-	public void setLista(ArrayList<Ave> lista) {
-		Ave.lista = lista;
-	}
 	
 	
 	public String getColorPlumas() {
