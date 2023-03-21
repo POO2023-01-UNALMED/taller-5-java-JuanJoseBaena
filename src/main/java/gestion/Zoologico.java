@@ -1,57 +1,53 @@
 package gestion;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+
 
 public class Zoologico {
-	private String nombre;
-	private String ubicacion;
-	private ArrayList<Zona> zonas = new ArrayList<Zona>();
-	
-	public Zoologico (String nombre, String ubicacion) {
-		this.nombre = nombre;
-		this.ubicacion = ubicacion;
-	}
-	
-	
-	public Zoologico () {
-		this(null, null);
-	}
-	
-	
-	public void agregarZonas(Zona zona) {
-		this.zonas.add(zona);
-	}
-	
-	
-	public int cantidadTotalAnimales() {
-		int contador = 0;
-		for (int i = 0; i<zonas.size(); i++) {
-			contador += zonas.get(i).cantidadAnimales();
-		}
-		return contador;
-	}
-	
-	
-	public String getNombre() {
-		return nombre;
-	}
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-	
-	
-	public String getUbicacion() {
-		return ubicacion;
-	}
-	public void setUbicacion(String ubicacion) {
-		this.ubicacion = ubicacion;
-	}
-	
-	public ArrayList<Zona> getZona(){
-		return zonas;
-	}
-	
-	public void setZona(ArrayList<Zona> zonas) {
-		this.zonas = zonas;
-	}
+    private String nombre;
+    private String ubicacion;
+    private ArrayList<Zona> zonas = new ArrayList();
+    
+    public Zoologico(String n, String u){
+        nombre = n;
+        ubicacion = u;
+    }
+    
+    public Zoologico(){
+    }
+    
+    public void agregarZonas(Zona z){
+        zonas.add(z);
+    }
+    
+    public int cantidadTotalAnimales(){
+        int s = 0;
+        for (int i = 0; i < zonas.size(); i++){
+            s += zonas.get(i).cantidadAnimales();
+        }
+        return s;
+    }
+    
+    public String getNombre() {
+        return nombre;
+    }
+    
+    public String getUbicacion(){
+        return ubicacion;
+    }
+    
+    public ArrayList<Zona> getZona(){
+        return zonas;
+    }
+    
+    public void setNombre(String n){
+        nombre = n;
+    }
+    
+    public void setUbicacion(String u){
+        ubicacion = u;
+    }
+
+   
 }
